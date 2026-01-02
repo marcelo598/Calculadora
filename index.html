@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Game Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora" id="corpo-calc">
+        <div class="status-topo">
+            <span>Nível: <span id="nivel">1</span></span>
+            <span>🪙 <span id="moedas">0</span></span>
+        </div>
+
+        <div class="visor" id="visor-bg">
+            <div id="pergunta">Carregando...</div>
+            <div id="display"></div>
+        </div>
+
+        <div class="grade">
+            <button onclick="add(1)">1</button>
+            <button onclick="add(2)">2</button>
+            <button onclick="add(3)">3</button>
+            <button onclick="add(4)">4</button>
+            <button onclick="add(5)">5</button>
+            <button onclick="add(6)">6</button>
+            <button onclick="add(7)">7</button>
+            <button onclick="add(8)">8</button>
+            <button onclick="add(9)">9</button>
+            <button class="btn-c" onclick="limpar()">C</button>
+            <button onclick="add(0)">0</button>
+            <button class="btn-ok" onclick="confirmar()">OK</button>
+        </div>
+    </div>
+
+    <div class="loja">
+        <strong>🛒 LOJA DE SKINS</strong>
+        <div class="item-loja">
+            <span>Calculadora Neon (50 moedas)</span>
+            <button class="btn-buy" onclick="comprar('neon', 50)">Comprar</button>
+        </div>
+        <div class="item-loja">
+            <span>Teclado Dark (30 moedas)</span>
+            <button class="btn-buy" onclick="comprar('dark', 30)">Comprar</button>
+        </div>
+        <div class="item-loja">
+            <span>Visor Hacker (40 moedas)</span>
+            <button class="btn-buy" onclick="comprar('hacker', 40)">Comprar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
